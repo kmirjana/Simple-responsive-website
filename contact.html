@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="./css/style-main.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class='navbar'>
+    <div class="nav-center">
+      <!-- header -->
+      <div class="nav-header">
+        <a href="index.html" class='nav-logo'>
+          <img src="./assets/sunrise-logo.jpg" alt="food">
+        </a>
+        <button class="btn nav-btn" type='button'>
+          <i class="fas fa-align-justify"></i>
+        </button>
+      </div>
+      <!-- links -->
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="tags.html" class="nav-link">Tags</a>
+        <a href="recipes.html" class="nav-link">Recipes</a>
+        <div class="nav-link contact-link">
+          <a href="contact.html" class="btn">Contact</a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <!-- main -->
+  <main class='page'>
+    <section class="contact-container">
+      <article class="contact-info">
+        <h3>want to place an order?</h3>
+        <p>Ramps vape gastropub tumeric knausgaard. Ugh vape narwhal, taiyaki pickledIPhone poutine marfa distillery
+          umami, celiac vice stumptown plaid salvia</p>
+        <p>Ramps vape gastropub tumeric knausgaard. Ugh vape narwhal, taiyaki pickled
+          messenger bag williamsburg listicle intelligentsia irony chia. Coloring book
+          tacos poutine cred hella kitsch austin.
+          IPhone poutine marfa distillery umami, celiac vice stumptown plaid salvia</p>
+      </article>
+      <article>
+        <form class="form contact-form">
+          <!-- single form row -->
+          <div class="form-row">
+            <label for="name" class="form-label">your name</label>
+            <input type="text" name='name' id='name' class='form-input' />
+          </div>
+          <div class="form-row">
+            <label for="phone" class="form-label">your phone number</label>
+            <input type="text" name='phone' id='phone' class='form-input' />
+          </div>
+          <div class="form-row">
+            <label for="email" class="form-label">your email</label>
+            <input type="text" name='email' id='email' class='form-input' />
+          </div>
+          <div class="form-row">
+            <label for="message" class="form-label">Message</label>
+            <textarea name="message" id="message" class="form-textarea"></textarea>
+          </div>
+          <button type="submit" class="btn btn-block">submit</button>
+          <!-- end of single row -->
+        </form>
+      </article>
+      <section class="featured-recipes">
+        <h5 class="featured-title">What do we offer :</h5>
+        <div class="recipes-list">
+          <!-- single recipe -->
+
+          <a href="single-recipe.html" class='recipe'>
+            <img src='./assets/tomato-salad.jpg' alt='tomato-salad' class='img recipe-img'>
+            <h5>tomato salad</h5>
+            <p>price: 7€</p>
+          </a>
+          <a href="single-recipe.html" class='recipe'>
+            <img src='./assets/sendwich.jpg' alt='ham sendwich' class='img recipe-img'>
+            <h5>ham sendwich</h5>
+            <p>price: 4€</p>
+          </a>
+          <a href="single-recipe.html" class='recipe'>
+            <img src='./assets/pizza.jpg' alt='pizza' class='img recipe-img'>
+            <h5>pizza</h5>
+            <p>price: 8€</p>
+          </a>
+          <a href="single-recipe.html" class='recipe'>
+            <img src='./assets/salmon.jpg' alt='smoked salmon canape' class='img recipe-img'>
+            <h5>smoked salmon canape</h5>
+            <p>price: 4€</p>
+          </a>
+        </div>
+      </section>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="page-footer">
+    <p>&copy;<span id='date'></span>
+      <span class='footer-logo'>TakeAwayFood</span>
+      made by <span class='name'>@Mirjana</span>
+    </p>
+  </footer>
+  <script src='./js/app.js'></script>
+
+</body>
+
+</html>
